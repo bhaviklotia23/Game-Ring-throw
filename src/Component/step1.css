@@ -1,0 +1,122 @@
+.Main {
+  background-image: url("../Asset/bg.png");
+  height: max-content;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+}
+.Mian {
+  background-image: url("../Asset/mian.png");
+  height: max-content;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+}
+
+.main__dom {
+  width: 100%;
+  min-width: 320px;
+}
+
+.main__container {
+  margin: auto 0px;
+}
+
+
+.Theme {
+    background-image: url("../Asset/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  
+/* Media Query for Mobile Devices */
+
+@media (min-width: 320px) {
+  .Mian {
+    width: 320px !important;
+  }
+
+  .main__dom {
+    width: 320px !important;
+  }
+}
+@media (max-width: 480px) {
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Mian {
+    width: 320px !important;
+  }
+  .main__dom {
+    width: 320px !important;
+  }
+  .Theme {
+    background-image: url("../Asset/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+}
+
+.tet {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  outline: none;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.butuun {
+  position: absolute;
+  top: 0;
+  border-radius: 5px;
+  right: 0px;
+  z-index: 2;
+  border: none;
+  top: 2px;
+  height: 30px;
+  cursor: pointer;
+  color: white;
+  background-color: #1e90ff;
+  transform: translateX(2px);
+}
+
+.ig {
+  /* adjust the below to control the 3D effect */
+  --x: 10px;
+  --y: 20px;
+  transform: perspective(1000px) rotateX(var(--_a, 40deg));
+  /* */
+  clip-path: polygon(
+    var(--y) var(--y),
+    calc(100% - var(--y)) var(--y),
+    calc(100% - var(--y)) calc(100% - var(--y)),
+    calc(100% - var(--y) - var(--x)) var(--_c, 100%),
+    calc(var(--x) + var(--y)) var(--_c, 100%),
+    var(--y) calc(100% - var(--y))
+  );
+  outline: var(--y) solid rgba(0, 0, 0, 0.4);
+  outline-offset: calc(-1 * var(--y));
+  padding: var(--y) var(--y) 0 var(--y);
+  transition: 1s;
+}
+
+.rt {
+  transform: rotate(270deg);
+}
